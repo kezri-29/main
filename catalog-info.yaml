@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: main
+  description: A python application as a test component named - main
+  annotations:
+    github.com/project-slug: kezri-29/main
+    backstage.io/techdocs-ref: dir:.
+    scorecard/jsonDataUrl: https://raw.githubusercontent.com/kezri-29/main/refs/heads/main/component-score.json
+    argocd/app-name: main
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
