@@ -67,7 +67,7 @@ jobs:
       - name: argocd login
         shell: bash
         run: |
-          argocd login argocd-server.argocd \
+          argocd login 40.81.228.232.nip.io:8443 \
             --insecure  \
             --grpc-web \
             --username admin \
@@ -97,5 +97,6 @@ jobs:
           argocd app sync main
 
           argocd app wait main --timeout 180
+
 
 
